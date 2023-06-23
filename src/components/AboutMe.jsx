@@ -1,23 +1,21 @@
 import React from 'react'
 import avatar from '../assets/img/avatar-nora.jpg'
-import bgSpace from '../assets/img/background-1.jpg'
+
 import styled from 'styled-components'
 
 function AboutMe() {
   return (
-    <FlexWrapper><AboutSection></AboutSection><Avatar src={avatar}/></FlexWrapper>
+    <FlexWrapper><AboutSection><h1 style={{color:"white", fontWeight:"bold"}}>Hello! Je suis ...</h1></AboutSection><Avatar src={avatar}/></FlexWrapper>
   )
 }
 
 export default AboutMe
 const FlexWrapper = styled.div`
-
 display:flex;
 flex-direction: row;
 flex-wrap:no-wrap;
 justify-content: space-around;
 align-items:center;
-// height:100vh;
 `
 const AboutSection = styled.div`
 width:50%;`

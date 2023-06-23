@@ -3,6 +3,7 @@ import "./App.css";
 import AboutMe from "./components/AboutMe";
 import NavBar from "./components/NavBar";
 import bgSpace from "./assets/img/background-1.jpg";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <NavBar />
         <AboutMe />
       </TopWrapper>
-      HELLO
+      <Skills />
     </div>
   );
 }
