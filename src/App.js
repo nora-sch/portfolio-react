@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+import "./App.css";
+import AboutMe from "./components/AboutMe";
+import NavBar from "./components/NavBar";
+import bgSpace from "./assets/img/background-1.jpg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TopWrapper>
+        <NavBar />
+        <AboutMe />
+      </TopWrapper>
+      HELLO
     </div>
   );
 }
 
 export default App;
+const TopWrapper = styled.div`
+  background-image: linear-gradient(
+      to bottom,
+      #2f334e,
+      transparent,
+      #43455c4e,
+      #2f334e
+    ),
+    url(${bgSpace});
+  background-size: cover;
+`;
